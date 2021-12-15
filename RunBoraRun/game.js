@@ -7,7 +7,7 @@
         default: 'arcade',
         arcade: {
             gravity: false,
-            debug: false, 
+            debug: false, //这个最后最后的时候要关掉，所以那个红色的格子会没有掉
         }
     },
     scale: { //这个是responsive跟着你的screen的大小，会自动scale
@@ -16,7 +16,7 @@
     },
     backgroundColor: '#000000',
     pixelArt: true,
-    scene: [preload, RBRintro, RBRstoryline1, RBRstoryline2, RBRcharacters, RBRgameRules, RBRinstructions, world, level1, level2, level3, RBRwin,RBRgameOver]
+    scene: [RBRintro, RBRstoryline1, RBRstoryline2, RBRcharacters, RBRgameRules, RBRinstructions, world, level1, level2, level3, RBRwin,RBRgameOver]
     //level1, level2, level3
 };
 
