@@ -14,7 +14,7 @@ class world extends Phaser.Scene {
 
   preload() {
     // Step 1, load JSON
-    this.load.tilemapTiledJSON("worldmap","assets/worldmap.json");
+    this.load.tilemapTiledJSON("world","assets/worldmap.json");
 
     // // Step 2 : Preload any images here, nickname, filename 
     this.load.image("asset","assets/firstassetpack.png");
@@ -30,8 +30,13 @@ class world extends Phaser.Scene {
   create() {
     console.log("*** world scene");
 
+    //background_sound
+    this.music = this.sound.add("bgm", {
+      loop: true,
+    }).setVolume(0.1);this.music.play();
+
     //Step 3 - Create the map from main
-    let map = this.make.tilemap({key:'worldmap'}); 
+    let map = this.make.tilemap({key:'world'}); 
 
     // Step 4 Load the game tiles
     // 1st parameter is name in Tiled,
@@ -114,10 +119,8 @@ class world extends Phaser.Scene {
     // this.physics.world.bounds.height = this.groundLayer.height;
 
     // Object layers
-
-    var start = map.findObject("spawnLayer",(obj) => obj.name === "start");
-
-    this.player = this.physics.add.sprite(10, 50, 'down').setScale(0.25);
+      // var start = map.findObject("spawnLayer",(obj) => obj.name === "start");
+    this.player = this.physics.add.sprite(163, 103, 'down').setScale(0.25);
 
     //enable debug
     window.player = this.player;
@@ -133,15 +136,15 @@ class world extends Phaser.Scene {
     this.cameras.main.startFollow(this.player);
 
 
-    // this.connectinghouseLayer.setCollisionByExclusion(-1, true) 
-    // this.houseLayer.setCollisionByExclusion(-1, true)
-    // this.waterLayer.setCollisionByExclusion(-1, true)
-    // this.treesLayer.setCollisionByExclusion(-1, true)
+    this.connectinghouse.setCollisionByExclusion(-1, true) 
+    this.house.setCollisionByExclusion(-1, true)
+    this.water.setCollisionByExclusion(-1, true)
+    this.trees.setCollisionByExclusion(-1, true)
 
-    // this.physics.add.collider(this.player, this.connectinghouseLayer); 
-    // this.physics.add.collider(this.player, this.houseLayer);
-    // this.physics.add.collider(this.player, this.waterLayer);
-    // this.physics.add.collider(this.player, this.treesLayer);
+    this.physics.add.collider(this.player, this.connectinghouse); 
+    this.physics.add.collider(this.player, this.house);
+    this.physics.add.collider(this.player, this.water);
+    this.physics.add.collider(this.player, this.trees);
   } 
   /////////////////// end of create //////////////////////////////
 
@@ -150,11 +153,8 @@ class world extends Phaser.Scene {
     // check for level1
     if ( this.player.x > 1263
         && this.player.y > 336 && this.player.y < 396 ) {
-            this.level1map();
+            this.level1();
         }
-
-    
-
 
     if (this.cursors.left.isDown) {
       this.player.body.setVelocityX(-200);
@@ -181,9 +181,9 @@ class world extends Phaser.Scene {
   } /////////////////// end of update //////////////////////////////
 
   // Function to jump to level1 map
-        level1map(player, tile) {
-            console.log("level1map function");
-            this.scene.start("level1map");
+        level1(player, tile) {
+            console.log("level1 function");
+            this.scene.start("level1");
         }
 
 

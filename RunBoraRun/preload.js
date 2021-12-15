@@ -10,6 +10,12 @@ class preload extends Phaser.Scene {
   preload() {
 
     this.load.image("cover","assets/coverPage.png");
+
+    //eat treats sound
+    this.load.audio("collect","assets/eat treats sound.WAV");
+
+    //background music
+    this.load.audio("bgm","assets/background music.mp3");
     
   }
 
@@ -33,10 +39,10 @@ class preload extends Phaser.Scene {
     spaceDown.on(
       "down",
       function () {
-        console.log("Jump to world scene");
+        console.log("Jump to RBRintro scene");
 
         this.scene.start(
-          "world",
+          "RBRintro",
           // Optional parameters
           {}
         );

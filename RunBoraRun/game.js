@@ -16,7 +16,7 @@
     },
     backgroundColor: '#000000',
     pixelArt: true,
-    scene: [preload, world, level1]
+    scene: [preload, RBRintro, RBRstoryline1, RBRstoryline2, RBRcharacters, RBRgameRules, RBRinstructions, world, level1, level2, level3, RBRwin,RBRgameOver]
     //level1, level2, level3
 };
 

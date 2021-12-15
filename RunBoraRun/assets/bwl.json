@@ -1,0 +1,215 @@
+{
+  "frames": [
+    {
+      "filename": "bwl-69",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 86,
+        "h": 110
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 24,
+        "y": 12,
+        "w": 86,
+        "h": 110
+      },
+      "sourceSize": {
+        "w": 134,
+        "h": 134
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "bwl-72",
+      "frame": {
+        "x": 0,
+        "y": 110,
+        "w": 86,
+        "h": 110
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 24,
+        "y": 12,
+        "w": 86,
+        "h": 110
+      },
+      "sourceSize": {
+        "w": 134,
+        "h": 134
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "bwl-68",
+      "frame": {
+        "x": 0,
+        "y": 220,
+        "w": 85,
+        "h": 110
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 25,
+        "y": 12,
+        "w": 85,
+        "h": 110
+      },
+      "sourceSize": {
+        "w": 134,
+        "h": 134
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "bwl-70",
+      "frame": {
+        "x": 0,
+        "y": 330,
+        "w": 85,
+        "h": 110
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 25,
+        "y": 12,
+        "w": 85,
+        "h": 110
+      },
+      "sourceSize": {
+        "w": 135,
+        "h": 134
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "bwl-73",
+      "frame": {
+        "x": 0,
+        "y": 440,
+        "w": 85,
+        "h": 110
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 25,
+        "y": 12,
+        "w": 85,
+        "h": 110
+      },
+      "sourceSize": {
+        "w": 135,
+        "h": 134
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "bwl-74",
+      "frame": {
+        "x": 0,
+        "y": 550,
+        "w": 85,
+        "h": 110
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 25,
+        "y": 12,
+        "w": 85,
+        "h": 110
+      },
+      "sourceSize": {
+        "w": 135,
+        "h": 134
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "bwl-71",
+      "frame": {
+        "x": 0,
+        "y": 660,
+        "w": 86,
+        "h": 109
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 24,
+        "y": 13,
+        "w": 86,
+        "h": 109
+      },
+      "sourceSize": {
+        "w": 134,
+        "h": 134
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "bwl-67",
+      "frame": {
+        "x": 85,
+        "y": 220,
+        "w": 86,
+        "h": 108
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 24,
+        "y": 13,
+        "w": 86,
+        "h": 108
+      },
+      "sourceSize": {
+        "w": 134,
+        "h": 134
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  ],
+  "meta": {
+    "app": "http://free-tex-packer.com",
+    "version": "0.6.7",
+    "image": "bwl.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 171,
+      "h": 769
+    },
+    "scale": 1
+  }
+}
