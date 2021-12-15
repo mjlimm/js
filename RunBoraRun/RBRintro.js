@@ -12,7 +12,7 @@ class RBRintro extends Phaser.Scene {
     this.load.image("RBRintro","assets/RBR intro.jpg");
 
         //eat treats sound
-        this.load.audio("collect","assets/eattreatssound.WAV");
+        this.load.audio("collect","assets/eattreatssound.wav");
 
         //background music
         this.load.audio("bgm","assets/backgroundmusic.mp3");
